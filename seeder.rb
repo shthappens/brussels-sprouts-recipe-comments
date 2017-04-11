@@ -74,10 +74,3 @@ db_connection do |conn|
   puts "#{TITLES[0]} has #{ind_comment.length} comments."
   puts "The comments for '#{TITLES[11]}' are: '#{comments_array[0]}' and '#{comments_array[1]}'."
 end
-
-
-# @sentences.each do |comment|
-#   db_connection do |conn|
-#     conn.exec_params("INSERT INTO comments (body, recipe_id, recipe_id) VALUES ($1, $2, $3)", [comment, rand(1..10), rand(1..10)])
-#   end
-# end
